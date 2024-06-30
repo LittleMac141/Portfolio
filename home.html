@@ -1,23 +1,25 @@
-<html lang="en">
+<html lang="en
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="media.css">
     <title>Portfolio Site</title>
 </head>
 <body>
     <div id="navigation">
         <nav id="desktop-nav">
-        <div class="logo">Blake McDonald</div>
-        <div>
-            <ul class="desktop">
-                <li><a href="#about_section">About</a></li> 
-                <li><a href="#projects_section">Projects</a></li>
-                <li><a href="#skills_section">Skills</a></li>
-            </ul> 
-        </div>
+            <div class="logo">Blake McDonald</div>
+            <div>
+                <ul class="desktop">
+                    <li><a href="#about_section">About</a></li> 
+                    <li><a href="#projects_section">Projects</a></li>
+                    <li><a href="#skill_section">Skills</a></li>
+                </ul> 
+            </div>
         
-    </nav>
+        </nav>
     </div>
     <!--<h1>About Me</h1>  -->
     <div id="about_section">
@@ -27,13 +29,14 @@
             <p>Front-End Developer</p>
 
             
-            <div id="social" class="social-linkedin">
-                <a href="" target="_blank"><img src="images/LinkedIn_Icon.png"></a>
-                
+            <div id="social">
+                <a href="https://www.linkedin.com/in/blake-mcdonald-426504244" target="_blank" class="socialicon"><img src="images/LinkedIn_Icon.png"></a>
+                <a href="https://github.com/LittleMac141" target="_blank" class="socialicon"><img src="images/github.png" class="git"></a>
+                <button class="resume"><a href="images\Web Development Resume.pdf" target="_blank">View My Resume</a></button>
             </div>        
-            <div id="social" class="social-github">
+            <!-- <div id="social" class="social-github">
                 <a href="https://github.com/LittleMac141" target="_blank"><img src="images/github.png" class="git"></a>
-            </div>
+            </div> -->
         </aside>
     
         <!-- <div id="social" class="social-linkedin">
@@ -46,6 +49,13 @@
     </div>
     <h1 style="color: black;">Projects</h1>
     <div id="projects_section">
+        <div class="card">
+                <h3>BB Photography</h3>
+                <img src="images/camera2.jpg" alt="">
+                <p></p>
+                <br>
+                <a href="">View Code on Github</a>
+            </div>
         <div class="card">
             <h3>Calculator</h3>
             <img src="images/calculator.jpg" alt="">
@@ -74,10 +84,46 @@
             <br>
             <a href="">View Code on Github</a>
         </div>
-        
-        
+        <div class="card">
+            <h3>BMI Calculator</h3>
+            <img src="images/bmi.jpg" alt="">
+            <p></p>
+            <br>
+            <a href="">View Code on Github</a>
+        </div>
     </div>
-    
-    
+    <h1>Skills</h1>
+    <div id="skills">
+        <div id="skill_section">
+            <div class="column">
+                <section class="skill">
+                    <h3>HTML</h3>
+                    <p>Intermediate</p>
+                </section>
+                <section class="skill">
+                    <h3>CSS</h3>
+                    <p>Intermediate</p>
+                </section>
+                <section class="skill">
+                    <h3>JavaScript</h3>
+                    <p>Basic</p>
+                </section>
+            </div>
+            <div class="column">
+                <section class="skill">
+                    <h3>Swift</h3>
+                    <p>Basic</p>
+                </section>
+                <section class="skill">
+                    <h3>C++</h3>
+                    <p>Basic</p>
+                </section>
+                <section class="skill">
+                    <h3>Python</h3>
+                    <p>Basic</p>
+                </section>
+            </div>
+        </div>  
+    </div>
 </body>
 </html>
